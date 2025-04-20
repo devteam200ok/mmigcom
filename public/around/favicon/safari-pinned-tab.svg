@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   xml:space="preserve"
+   width="682.66669"
+   height="682.66669"
+   viewBox="0 0 682.66669 682.66669"
+   sodipodi:docname="logo_black_512.ai"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs6"><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath16"><path
+         d="M 0,512 H 512 V 0 H 0 Z"
+         id="path14" /></clipPath></defs><sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0" /><g
+     id="g8"
+     inkscape:groupmode="layer"
+     inkscape:label="logo_black_512"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,682.66667)"><g
+       id="g10"><g
+         id="g12"
+         clip-path="url(#clipPath16)"><g
+           id="g18"
+           transform="translate(323.2551,255.9996)"><path
+             d="m 0,0 -129.121,74.548 c -3.335,1.926 -5.389,5.484 -5.389,9.335 l -0.001,130.427 c 0,8.298 8.982,13.483 16.168,9.335 L 134.511,77.66"
+             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path20" /></g><g
+           id="g22"
+           transform="translate(188.745,197.0098)"><path
+             d="m 0,0 v 117.982 c 0,8.297 -8.982,13.483 -16.168,9.334 L -129.122,62.1 c -3.335,-1.926 -5.389,-5.484 -5.389,-9.334 V -79.439 c 0,-8.297 8.982,-13.483 16.167,-9.335 l 102.175,58.991 c 7.186,4.149 16.168,-1.037 16.168,-9.334 V -155.32 c 0,-8.297 8.982,-13.483 16.167,-9.334 L 263.632,-21.78 c 3.335,1.925 5.389,5.483 5.389,9.334 V 136.651 L 16.168,-9.334 C 8.982,-13.483 0,-8.297 0,0"
+             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path24" /></g></g></g></g></svg>

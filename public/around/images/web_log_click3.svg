@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name=" 레이어 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 75.9 75.9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #515151;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #515151;
+        stroke-linejoin: round;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #0a8aff;
+      }
+
+      .cls-4 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-2" d="M71.5,48.4V12c0-1.9-1.5-3.4-3.4-3.4H7.8c-1.9,0-3.4,1.5-3.4,3.4v36.4"/>
+    <path class="cls-2" d="M4.4,48.4v6c0,1.9,1.5,3.4,3.4,3.4h60.4c1.9,0,3.4-1.5,3.4-3.4v-6"/>
+    <line class="cls-1" x1="38" y1="58.2" x2="38" y2="67.9"/>
+    <line class="cls-1" x1="16.1" y1="67.9" x2="59.8" y2="67.9"/>
+  </g>
+  <path class="cls-3" d="M52.3,33.1c0,7.9-6.4,14.3-14.3,14.3s-14.3-6.4-14.3-14.3,6.4-14.3,14.3-14.3,14.3,6.4,14.3,14.3Z"/>
+  <path class="cls-4" d="M38.1,35.5h0c-.6,0-1.2-.5-1.2-1.1l-.6-7.5c0-.7.5-1.3,1.2-1.3h1.3c.7,0,1.3.6,1.2,1.3l-.6,7.5c0,.6-.6,1.1-1.2,1.1ZM40,38.7c0,1.1-.8,1.9-2,1.9s-1.9-.9-1.9-1.9.8-2,2-1.9,1.9.9,1.9,1.9Z"/>
+</svg>
