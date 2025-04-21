@@ -26,10 +26,10 @@
                             <div class="form-check mb-4">
                                 <input class="form-check-input" type="checkbox" id="requestVisitCheckbox">
                                 <label class="form-check-label" for="requestVisitCheckbox"
-                                    style="font-size:1rem;margin-top:2px">방문상담을 원하는 경우 체크해 주세요.</label>
+                                    style="font-size:1rem;margin-top:2px">출장상담을 원하는 경우 체크해 주세요.</label>
                             </div>
                             <div style="display: none;" id="requestVisit">
-                                <label class="form-label fw-bold">방문일시 (날짜와 시간을 작성하도록 부탁드립니다)</label>
+                                <label class="form-label fw-bold">출장일시</label>
                                 <div class="input-group mb-3">
                                     <input class="form-control py-1" type="date" id="visit_date"
                                         value="{{ \Carbon\Carbon::now()->next('Monday')->format('Y-m-d') }}">
@@ -40,7 +40,7 @@
                                         @endfor
                                     </select>
                                 </div>
-                                <label class="form-label fw-bold">방문장소</label>
+                                <label class="form-label fw-bold">출장장소</label>
                                 <input class="form-control mb-3" type="text" id="visit_location">
                             </div>
                             <div class="mb-4">
