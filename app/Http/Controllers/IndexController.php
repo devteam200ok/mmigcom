@@ -186,4 +186,64 @@ class IndexController extends Controller
         );
         return response()->json($data);
     }
+
+    public function si_development()
+    {
+        return view('custom.si_development');
+    }
+
+    public function homepage_development()
+    {
+        return view('custom.homepage_development');
+    }
+
+    public function creative_production()
+    {
+        return view('custom.creative_production');
+    }
+
+    public function video()
+    {
+        return view('custom.video');
+    }
+
+    public function design()
+    {
+        return view('custom.design');
+    }
+
+    public function thumbnail()
+    {
+        return view('custom.thumbnail');
+    }
+
+    public function sa()
+    {
+        return view('custom.sa');
+    }
+
+    public function da()
+    {
+        return view('custom.da');
+    }
+
+    public function sns()
+    {
+        return view('custom.sns');
+    }
+
+    public function mcn()
+    {
+        return view('custom.mcn');
+    }
+
+    public function cpi()
+    {
+        return view('custom.cpi');
+    }
+
+    public function imc()
+    {
+        return view('custom.imc');
+    }
 }

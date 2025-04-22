@@ -27,6 +27,20 @@ Route::get('/terms', [IndexController::class, 'terms']);
 Route::get('/privacy', [IndexController::class, 'privacy']);
 Route::get('/email', [IndexController::class, 'email']);
 
+
+Route::get('/si-development', [IndexController::class, 'si_development']);
+Route::get('/homepage-development', [IndexController::class, 'homepage_development']);
+Route::get('/creative-production', [IndexController::class, 'creative_production']);
+Route::get('/video', [IndexController::class, 'video']);
+Route::get('/design', [IndexController::class, 'design']);
+Route::get('/thumbnail', [IndexController::class, 'thumbnail']);
+Route::get('/sa', [IndexController::class, 'sa']);
+Route::get('/da', [IndexController::class, 'da']);
+Route::get('/sns', [IndexController::class, 'sns']);
+Route::get('/mcn', [IndexController::class, 'mcs']);
+Route::get('/cpi', [IndexController::class, 'cpi']);
+Route::get('/imc', [IndexController::class, 'imc']);
+
 Route::get('/company', [IndexCompanyController::class, 'index']);
 
 Route::get('/solution', [IndexSolutionController::class, 'index']);
