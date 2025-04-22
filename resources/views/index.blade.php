@@ -29,7 +29,7 @@
         <ul class="nav-menu">
             <li>
                 <a id="main_visual_dot" href="#main_visual" class="dot active">
-                    <span class="d-none d-md-block">main</span>
+                    <span class="d-none d-md-block">main!!!</span>
                     <span class="d-block d-md-none" style="min-height:1rem"></span>
                 </a>
             </li>
