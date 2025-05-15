@@ -55,12 +55,12 @@
                 <div class="position-relative px-5">
 
                     <!-- External slider prev/next buttons -->
-                    <button type="button" id="prev"
+                    <button type="button" id="prev1"
                         class="btn btn-prev btn-icon btn-sm btn-outline-info rounded-circle position-absolute top-50 start-0 translate-middle-y mt-n3"
                         aria-label="Prev">
                         <i class="ai-arrow-left"></i>
                     </button>
-                    <button type="button" id="next"
+                    <button type="button" id="next1"
                         class="btn btn-next btn-icon btn-sm btn-outline-info rounded-circle position-absolute top-50 end-0 translate-middle-y mt-n3"
                         aria-label="Next">
                         <i class="ai-arrow-right"></i>
@@ -77,8 +77,8 @@
                             "clickable": true
                         },
                         "navigation": {
-                            "prevEl": "#prev",
-                            "nextEl": "#next"
+                            "prevEl": "#prev1",
+                            "nextEl": "#next1"
                         },
                         "breakpoints": {
                             "600": {
