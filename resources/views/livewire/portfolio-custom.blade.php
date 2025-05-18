@@ -156,7 +156,7 @@
                             <option value="{{ $sub_category->id }}">{{ $sub_category->title }}</option>
                         @endforeach
                     </select>
-                    @if(count($sub_sub_categories)>0)
+                    @if (count($sub_sub_categories) > 0)
                         <select wire:model.change="sub_sub_category_id" class="form-select category-select me-2">
                             <option value="0">분야별(소분류)</option>
                             @foreach ($sub_sub_categories as $sub_category)
@@ -214,12 +214,44 @@
                                             </h6>
                                         </div>
                                         <div class="text-start px-2">
-                                            @foreach ($filters as $filter)
-                                                @if ($filter != '' && $filter != ' ' && $filter != null)
-                                                    <span class="fs-sm mb-1 me-1 px-2 py-1"
-                                                        style="background-color:#efefef">{{ $filter }}</span>
-                                                @endif
-                                            @endforeach
+                                            @php
+                                                $cs = DB::connection('mysql2')
+                                                    ->table('portfolio_custom_categories')
+                                                    ->where('portfolio_id', $custom->id)
+                                                    ->get();
+                                            @endphp
+                                            @if ($cs)
+                                                @foreach ($cs as $c)
+                                                    @php
+                                                        $category = DB::connection('mysql2')
+                                                            ->table('portfolio_categories')
+                                                            ->find($c->category_id);
+                                                    @endphp
+                                                    @if ($category)
+                                                        <span class="fs-sm mb-1 me-1 px-2 py-1"
+                                                        style="background-color:#efefef">{{ $category->title }}</span>
+                                                    @endif
+                                                @endforeach
+                                            @endif
+                                            @php
+                                                $ss = DB::connection('mysql2')
+                                                    ->table('portfolio_custom_sub_categories')
+                                                    ->where('portfolio_id', $custom->id)
+                                                    ->get();
+                                            @endphp
+                                            @if ($ss)
+                                                @foreach ($ss as $c)
+                                                    @php
+                                                        $category = DB::connection('mysql2')
+                                                            ->table('portfolio_sub_categories')
+                                                            ->find($c->category_id);
+                                                    @endphp
+                                                    @if ($category)
+                                                        <span class="fs-sm mb-1 me-1 px-2 py-1"
+                                                        style="background-color:#efefef">{{ $category->title }}</span>
+                                                    @endif
+                                                @endforeach
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
@@ -227,8 +259,8 @@
                         </div>
                     @endif
                     @if ($custom->type == '콘텐츠')
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3 select_display"
-                            data-id="{{ $custom->id }}" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3 select_display" data-id="{{ $custom->id }}"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                             aria-controls="offcanvasRight" style="cursor: pointer">
                             <div class="card" style="min-height:400px;border-radius: 0px">
                                 <img class="card-img-top" style="border-radius: 0px"
@@ -242,12 +274,44 @@
                                         </h6>
                                     </div>
                                     <div class="text-start px-2">
-                                        @foreach ($filters as $filter)
-                                            @if ($filter != '' && $filter != ' ' && $filter != null)
-                                                <span class="fs-sm mb-1 me-1 px-2 py-1"
-                                                    style="background-color:#efefef">{{ $filter }}</span>
-                                            @endif
-                                        @endforeach
+                                        @php
+                                            $cs = DB::connection('mysql2')
+                                                ->table('portfolio_custom_categories')
+                                                ->where('portfolio_id', $custom->id)
+                                                ->get();
+                                        @endphp
+                                        @if ($cs)
+                                            @foreach ($cs as $c)
+                                                @php
+                                                    $category = DB::connection('mysql2')
+                                                        ->table('portfolio_categories')
+                                                        ->find($c->category_id);
+                                                @endphp
+                                                @if ($category)
+                                                    <span class="fs-sm mb-1 me-1 px-2 py-1"
+                                                        style="background-color:#efefef">{{ $category->title }}</span>
+                                                @endif
+                                            @endforeach
+                                        @endif
+                                        @php
+                                            $ss = DB::connection('mysql2')
+                                                ->table('portfolio_custom_sub_categories')
+                                                ->where('portfolio_id', $custom->id)
+                                                ->get();
+                                        @endphp
+                                        @if ($ss)
+                                            @foreach ($ss as $c)
+                                                @php
+                                                    $category = DB::connection('mysql2')
+                                                        ->table('portfolio_sub_categories')
+                                                        ->find($c->category_id);
+                                                @endphp
+                                                @if ($category)
+                                                    <span class="fs-sm mb-1 me-1 px-2 py-1"
+                                                        style="background-color:#efefef">{{ $category->title }}</span>
+                                                @endif
+                                            @endforeach
+                                        @endif
                                     </div>
                                 </div>
                             </div>
